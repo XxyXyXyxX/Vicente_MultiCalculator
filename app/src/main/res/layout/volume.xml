@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59AEAB">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Volume"
+        android:textColor="#1E1A1A"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupVolume"
+        android:layout_width="267dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/radioPyramid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pyramid"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioCylinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cylinder"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioCube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cube"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioSphere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sphere"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/volumeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupVolume"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupVolume"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupVolume" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

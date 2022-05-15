@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59AEAB">
+
+
+    <TextView
+        android:id="@+id/VolumeCube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Volume(Pyramid)"
+        android:textColor="#070606"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/inputPyramidWidth"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Width"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/inputPyramidLength"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputPyramidLength"
+        app:layout_constraintTop_toBottomOf="@+id/inputPyramidLength" />
+
+    <EditText
+        android:id="@+id/inputPyramidLength"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Length"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pyramid"
+        app:layout_constraintBottom_toTopOf="@+id/inputPyramidWidth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/inputPyramidHeight"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Height"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/inputPyramidLength"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputPyramidLength"
+        app:layout_constraintTop_toBottomOf="@+id/inputPyramidWidth" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="155dp"
+        android:layout_height="62dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Result is"
+        android:textColor="#020202"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <Button
+        android:id="@+id/btnAnswerPyramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="sans-serif-black"
+        android:text="Answer"
+        app:layout_constraintEnd_toEndOf="@+id/answer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/answer"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
